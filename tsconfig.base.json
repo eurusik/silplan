@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sp/shell": ["src/libs/shell/src/index.ts"]
+      "@sp/shell": ["src/libs/shell/src/index.ts"],
+      "@sp/ui-kit": ["src/libs/ui-kit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

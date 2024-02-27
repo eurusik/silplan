@@ -1,0 +1,26 @@
+{
+  "name": "ui-kit",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/libs/ui-kit/src",
+  "prefix": "sp",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "src/libs/ui-kit/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "src/libs/ui-kit/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "src/libs/ui-kit/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}
